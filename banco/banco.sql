@@ -14,3 +14,10 @@
     senha varchar (30) NOT NULL
  );
 
+--use projeto1;
+-- INSERIR DADOS
+--insert into usuario
+--(nome_usuario, fone_usuario, email_usuario, senha)
+--values ('CÁSSIO','(18) 3622-9046','cassio@mail.com','1234');
+
+--select * from usuario;
