@@ -21,3 +21,6 @@
 --values ('CÁSSIO','(18) 3622-9046','cassio@mail.com','1234');
 
 --select * from usuario;
+
+-- alterar dados
+-- UPDATE usuario SET nome_usuario = "Zezinho", email_usuario = "ze@mail.com" WHERE id_usuario = 1
