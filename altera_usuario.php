@@ -19,6 +19,7 @@
 <body>
     <h1>Cadastro de Usuário</h1>
     <form action="altera_usuario_exe.php" method="post">
+        <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario']?>">
         <div>
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" value="<?php echo $row['nome_usuario']?>">
