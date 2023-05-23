@@ -29,3 +29,5 @@ if(mysqli_num_rows($result) > 0){
 }
 
 ?>
+<br>
+<a href="index.php"><button>Voltar</button></a>

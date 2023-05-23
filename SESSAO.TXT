@@ -1,0 +1,27 @@
+Sessão é uma forma de armazenar informações no servidor para compartilhar entre páginas
+
+1. INICIANDO SESSÃO
+if(session_status() != PHP_SESSION_ACTIVE)
+{
+    session_cache_expire(60); // 60 MINUTOS para a sessão expirar.
+    session_start();
+}
+
+2. GRAVANDO VALORES NA SESSÃO
+$_SESSION['chave'] = 'valor';
+$_SESSION['nome_usuario'] = 'Murilo';
+$_SESSION['usuario'] = 
+array(
+    "nome"=>"Murilo", 
+    "email"=>"murilo@gmail.com",
+    "senha"=>"1234"
+);
+
+3. LEITURA DE VALORES NA SESSÃO 
+echo $_SESSION['nome_usuario'];
+
+4. LIMPANDO DADOS DA SESSÃO 
+session_unset();
+
+5. DESTRUIR UMA SESSÃO 
+session_destroy(); // usado como logout
