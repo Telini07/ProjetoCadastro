@@ -30,6 +30,11 @@
             do{
             echo "<tr>";
             echo "<td>".$row['id_usuario']."</td>";
+            if($row['foto'] == ""){
+                echo "<td></td>";
+            }else {
+                echo "<td><img src='". $row['foto']. "' width='80' height='100'/></td>";
+            }
             echo "<td>".$row['nome_usuario']."</td>";
             echo "<td>".$row['email_usuario']."</td>";
             echo "<td>".$row['fone_usuario']."</td>";
